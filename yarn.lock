@@ -968,6 +968,22 @@
   resolved "https://registry.yarnpkg.com/@next/react-refresh-utils/-/react-refresh-utils-9.4.0.tgz#6f8732e1909fb12f6dca8a82b7fc4b79c6c8cfcd"
   integrity sha512-AaEC/diS2two2JLsEItGhuAux8UfPo0o34/7l1SIw0t4SYunUYJsxM/Y55OR2ljiVn9ffKR1n1U9IEQhsK80jw==
 
+"@researchgate/react-intersection-list@^3.0.10":
+  version "3.0.10"
+  resolved "https://registry.yarnpkg.com/@researchgate/react-intersection-list/-/react-intersection-list-3.0.10.tgz#ce03aa5e8771bd088768515df299116cef6e34a7"
+  integrity sha512-PcWSnIzbn6dD8hwDyn82oxvSej4xbl66ZccMtzKmcXgDlXa/+pqr1CsEdtU4t4J9IKzBQ6BGN+SOtvlB/+rsYg==
+  dependencies:
+    "@researchgate/react-intersection-observer" "^1.1.2"
+    prop-types "^15.7.2"
+    warning "^4.0.3"
+
+"@researchgate/react-intersection-observer@^1.1.2":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@researchgate/react-intersection-observer/-/react-intersection-observer-1.1.3.tgz#190b40d126af9a149ad8981d23e1ab07eddd9ad1"
+  integrity sha512-h47GLwbd7ANnX+Tw9uAYknczq+TONyiRv5cc/4I8LZORxNW5QUuyI3hkVBuj564FzTtoyzP4LcGmWjjs3dHv9A==
+  dependencies:
+    prop-types "^15.7.2"
+
 "@types/color-name@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
@@ -4908,7 +4924,7 @@ prop-types-exact@1.2.0:
     object.assign "^4.1.0"
     reflect.ownkeys "^0.2.0"
 
-prop-types@15.7.2, prop-types@^15.6.2:
+prop-types@15.7.2, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -6054,6 +6070,13 @@ vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
+
+warning@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/warning/-/warning-4.0.3.tgz#16e9e077eb8a86d6af7d64aa1e05fd85b4678ca3"
+  integrity sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==
+  dependencies:
+    loose-envify "^1.0.0"
 
 watchpack-chokidar2@^2.0.0:
   version "2.0.0"
