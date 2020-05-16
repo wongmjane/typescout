@@ -15,11 +15,12 @@ import React, {
 import cx from 'utils/cx';
 import filter from 'utils/filter';
 import toArray from 'utils/iterableToArray';
-import map from 'utils/map';
 import pipe from 'utils/pipe';
 import strIncludes from 'utils/strIncludes';
 import strLowerCase from 'utils/strLowerCase';
 import ternary from 'utils/ternary';
+
+import List from '@researchgate/react-intersection-list';
 
 import type { Dehydrator, HydrationPair, Hydrator } from 'types';
 type SearchRecord = HydrationPair<
@@ -100,35 +101,50 @@ export interface TypesearchQueryResults {
 const TypesearchQueryResults: FC<TypesearchQueryResults> = ({ query }) =>
   pipe(
     filter<SearchRecord['HYDRATED']>(
-      pipe(({ t }) => t, strLowerCase, strIncludes(strLowerCase(query)))
+      pipe(({ t }) => t, strLowerCase, pipe(strLowerCase, strIncludes)(query))
     ),
     toArray,
     ternary(
       (record) => record.length > 0,
-      pipe(
-        map(({ d, l, t }, key) => (
-          <ExternLink
-            key={key}
-            href={`https://www.npmjs.org/package/@types/${t}`}
-            className="bg-gray-300 m-2 px-2 py-1 rounded-lg font-medium flex items-center"
-          >
-            <div>
-              <h3 className="font-semibold">{t}</h3>
-              <div className="text-sm text-gray-600">{l}</div>
-            </div>
-            {d > 0 && (
-              <div className={cx('ml-3 text-xs')}>
-                {Millify(d, { precision: 1 })}
+      (record) => {
+        const { length } = record;
+        return (
+          <List
+            itemCount={length}
+            pageSize={length <= 20 ? length : 20}
+            itemsRenderer={(items, ref) => (
+              <div
+                className="flex-grow flex flex-wrap items-start content-start"
+                ref={ref as any}
+              >
+                {items}
               </div>
             )}
-          </ExternLink>
-        )),
-        (a) => (
-          <div className="flex-grow flex flex-wrap items-start content-start">
-            {a}
-          </div>
-        )
-      ),
+            renderItem={(index, key) => {
+              const {
+                [index]: { d, l, t },
+              } = record;
+              return (
+                <ExternLink
+                  key={key}
+                  href={`https://www.npmjs.org/package/@types/${t}`}
+                  className="bg-gray-300 m-2 px-2 py-1 rounded-lg font-medium flex items-center"
+                >
+                  <div>
+                    <h3 className="font-semibold">{t}</h3>
+                    <div className="text-sm text-gray-600">{l}</div>
+                  </div>
+                  {d > 0 && (
+                    <div className={cx('ml-3 text-xs')}>
+                      {Millify(d, { precision: 1 })}
+                    </div>
+                  )}
+                </ExternLink>
+              );
+            }}
+          />
+        );
+      },
       () => (
         <div className="flex-grow flex items-center content-center justify-center flex-col">
           <div className="text-3xl">¯\_(ツ)_/¯</div>
