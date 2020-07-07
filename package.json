@@ -17,7 +17,7 @@
     "ts-toolbelt": "^6.9.4"
   },
   "devDependencies": {
-    "@types/node": "^14.0.1",
+    "@types/node": "^14.0.19",
     "@types/react": "^16.9.35",
     "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^1.4.6",
