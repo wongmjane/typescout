@@ -11,7 +11,7 @@
   "dependencies": {
     "@researchgate/react-intersection-list": "^3.0.10",
     "millify": "^3.2.1",
-    "next": "9.4.4",
+    "next": "9.5.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "ts-toolbelt": "^6.13.24"
