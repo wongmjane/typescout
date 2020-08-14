@@ -9,7 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@researchgate/react-intersection-list": "^3.0.10",
+    "@researchgate/react-intersection-list": "^3.0.11",
     "millify": "^3.2.1",
     "next": "9.4.4",
     "react": "16.13.1",

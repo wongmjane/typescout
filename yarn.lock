@@ -967,10 +967,10 @@
   resolved "https://registry.yarnpkg.com/@next/react-refresh-utils/-/react-refresh-utils-9.4.4.tgz#d94cbb3b354a07f1f5b80e554d6b9e34aba99e41"
   integrity sha512-9nKENeWRI6kQk44TbeqleIVtNLfcS3klVUepzl/ZCqzR5Bi06uqBCD277hdVvG/wL1pxA+R/pgJQLqnF5E2wPQ==
 
-"@researchgate/react-intersection-list@^3.0.10":
-  version "3.0.10"
-  resolved "https://registry.yarnpkg.com/@researchgate/react-intersection-list/-/react-intersection-list-3.0.10.tgz#ce03aa5e8771bd088768515df299116cef6e34a7"
-  integrity sha512-PcWSnIzbn6dD8hwDyn82oxvSej4xbl66ZccMtzKmcXgDlXa/+pqr1CsEdtU4t4J9IKzBQ6BGN+SOtvlB/+rsYg==
+"@researchgate/react-intersection-list@^3.0.11":
+  version "3.0.11"
+  resolved "https://registry.yarnpkg.com/@researchgate/react-intersection-list/-/react-intersection-list-3.0.11.tgz#bbae217036217b39ada2edc2ce78d22a8194c146"
+  integrity sha512-EBi56JI0QOctiJFbNH/p1pnLk/Hr2cpBQL1lKmXe55Z49ohYTrgRETzEzYH4hTCWP6VKMFpstf51cCnEf0qoHA==
   dependencies:
     "@researchgate/react-intersection-observer" "^1.1.2"
     prop-types "^15.7.2"
