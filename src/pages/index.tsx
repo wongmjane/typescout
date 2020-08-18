@@ -271,7 +271,7 @@ const TypesearchApp: FC = () => {
 };
 
 export const getStaticProps: GetStaticProps<Props> = async () => ({
-  unstable_revalidate: 600,
+  revalidate: 600,
   props: {
     data: dehydratePageData({
       searchRecord: (await (
