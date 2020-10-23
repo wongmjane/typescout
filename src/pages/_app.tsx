@@ -1,9 +1,9 @@
 import 'styles/global.css';
 
-import { AppProps } from 'next/app';
-import React, { FC } from 'react';
+import type { AppProps } from 'next/app';
+import type { VFC } from 'react';
 
-const App: FC<AppProps> = ({ Component, pageProps }) => (
+const App: VFC<AppProps> = ({ Component, pageProps }) => (
   <div className='w-screen min-h-screen flex'>
     <Component {...pageProps} />
   </div>
