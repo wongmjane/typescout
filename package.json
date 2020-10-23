@@ -11,16 +11,16 @@
   "dependencies": {
     "@researchgate/react-intersection-list": "^3.0.11",
     "millify": "^3.3.0",
-    "next": "9.5.2",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "ts-toolbelt": "^6.15.5"
+    "next": "9.5.5",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "ts-toolbelt": "^8.0.7"
   },
   "devDependencies": {
-    "@types/node": "^14.6.0",
-    "@types/react": "^16.9.46",
+    "@types/node": "^14.14.2",
+    "@types/react": "^16.9.53",
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.7.0",
-    "typescript": "^3.9.7"
+    "tailwindcss": "^1.9.5",
+    "typescript": "^4.0.3"
   }
 }
