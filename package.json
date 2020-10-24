@@ -25,7 +25,7 @@
     "@types/react": "^16.9.53",
     "babel-plugin-optimize-clsx": "^2.6.1",
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.9.5",
+    "tailwindcss": "^1.9.6",
     "typescript": "^4.0.3"
   },
   "prettier": {
