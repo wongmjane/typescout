@@ -4664,10 +4664,10 @@ ts-pnp@^1.1.6:
   resolved "https://registry.yarnpkg.com/ts-pnp/-/ts-pnp-1.2.0.tgz#a500ad084b0798f1c3071af391e65912c86bca92"
   integrity sha512-csd+vJOb/gkzvcCHgTGSChYpy5f1/XKNsmvBGO4JXS+z1v2HobugDz4s1IeFXM3wZB44uczs+eazB5Q/ccdhQw==
 
-ts-toolbelt@^8.0.7:
-  version "8.0.7"
-  resolved "https://registry.yarnpkg.com/ts-toolbelt/-/ts-toolbelt-8.0.7.tgz#4dad2928831a811ee17dbdab6eb1919fc0a295bf"
-  integrity sha512-KICHyKxc5Nu34kyoODrEe2+zvuQQaubTJz7pnC5RQ19TH/Jged1xv+h8LBrouaSD310m75oAljYs59LNHkLDkQ==
+ts-toolbelt@^9.5.8:
+  version "9.5.8"
+  resolved "https://registry.yarnpkg.com/ts-toolbelt/-/ts-toolbelt-9.5.8.tgz#49b8fb34f07be91b3663242de6c6e0f8da7c1830"
+  integrity sha512-91ZxXkvByBeLRYI2xsE42Q2KWNMeSv3ZeZmTZ+8py1M/iPNw0g21cTTXO28Q4M6Gs6hQQfjO4by2Ayt1q23eBA==
 
 tslib@^1.9.0:
   version "1.14.1"
